@@ -30,10 +30,8 @@ kubectl get all --all-namespaces  this command will give all namespaces pods,ser
  1641  kubectl get nodes -o wide     this will give more details like node ip's etc
  1642  history
  1643  export | grep -i aws
- 1644  declare -x AWS_ACCESS_KEY_ID="AKIAI7A6G43DLOGRVUEQ"
- 1645  declare -x AWS_SECRET_ACCESS_KEY="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"
- 1646  kops get  ig  --name c1.eu-central-1.aws.dp.dev.f5aas.com  --state s3://f5aas-kops-k8s-dev-eu-central-1
- 1647  kubectl  get nodes	
+ 1644  declare -x AWS_ACCESS_KEY_ID=""
+ 1
  1648  kubectl  get pods -n monitoring
  1649  kubectl  get pv
  1650  kubectl  get pv,pvc --all-namespaces
@@ -93,7 +91,7 @@ pod "nginx" deleted
 veeresh_infra@cloudshell:~ (decent-being-246011)$
 kubectl annotate - Update the annotations on a resource
 kubectl api-resources - Print the supported API resources on the server
-kubectl api-versions - Print the supported API versions on the server, in the form of ìgroup/versionî
+kubectl api-versions - Print the supported API versions on the server, in the form of ‚Äúgroup/version‚Äù
 kubectl apply - Apply a configuration to a resource by filename or stdin
 kubectl attach - Attach to a running container
 kubectl auth - Inspect authorization
